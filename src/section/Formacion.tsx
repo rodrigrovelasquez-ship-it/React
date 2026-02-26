@@ -56,31 +56,33 @@ const Formacion = [
   },
 ]
 
+//FORMACION/
+
 const FormacionComponent = () => {
 return (
     <section id="formacion" className="bg-gray-900 py-24 sm:py-32 scroll-mt-16">
       <div className=" mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl"> Titulaciones </h2>
-          <p className="mt-2 text-lg/8 text-gray-300">Formación profesional</p>
+          <h2 className="text-4xl text-white font-semibold tracking-tight text-pretty text-white sm:text-5xl"> Titulaciones </h2>
+          <p className="mt-2 text-lg/8 text-gray-500">Formación profesional</p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto  mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {Formacion.map((Titulo) => (
             <article key={Titulo.id} 
-            className="border rounded-lg p-7  flex max-w-xl flex-col items-start justify-between">
+            className="border rounded-lg p-7   flex max-w-xl flex-col items-start justify-between">
               <div className="flex items-center gap-x-4 text-xs">
-                <time dateTime={Titulo.datetime} className="text-gray-400">
+                <time dateTime={Titulo.datetime} className="text-gray-400 ">
                   {Titulo.date}
                 </time>
                 <a
                   href={Titulo.category.href}
-                  className="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800"
+                  className=" duration-initial relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800"
                 >
                   {Titulo.category.title}
                 </a>
               </div>
-              <div className="group relative grow">
-                <h3 className="mt-3 text-lg/6 font-semibold text-white group-hover:text-gray-300">
+              <div className="group relative grow ">
+                <h3 className=" underline mt-3 text-lg/6 font-semibold text-white group-hover:text-gray-300">
                   <a href={Titulo.href}>
                     <span className="absolute inset-0" />
                     {Titulo.title}

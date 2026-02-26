@@ -8,7 +8,7 @@ import Header from '../components/main/header/Header.tsx';
 import QSomos from '../section/Qsomos.tsx';
 import Formacion from '../section/Formacion';
 import Servicios from '../section/Servicios.tsx';
-import Projects from '../section/Projects.tsx';
+import Projects from '../section/Trabajos.tsx';
 import Contact from '../section/Contact.tsx';
 
 export const MainLayout = () => {
