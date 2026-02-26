@@ -1,0 +1,23 @@
+/*
+ * Archivo: index.css
+ * Sirve para: estilos globales y base de Tailwind.
+ * Consejo: los cambios aquí afectan a toda la app; prueba cambios pequeños y valida en varias pantallas.
+ */
+@import "tailwindcss";
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+
+body {
+    margin: 0;
+    background-color: #0f1921 ;
+}

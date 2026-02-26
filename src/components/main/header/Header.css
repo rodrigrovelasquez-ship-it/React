@@ -1,0 +1,11 @@
+/*
+ * Archivo: components/main/header/Header.css
+ * Sirve para: estilos del header usado por MainLayout.
+ * Consejo: cuando un estilo no aplica, revisa primero si el selector coincide con el HTML real.
+ */
+
+header {
+    background-color: #0f1921 ;
+}
+
+
